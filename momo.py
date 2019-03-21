@@ -3,7 +3,6 @@ from creature import Human, Animal, Oni
 
 class Team:
     member = []
-    kibi = 0
 
     def __init__(self, target, boss, kibi):
         self.target = Oni(target)
@@ -22,10 +21,9 @@ team = Team(target='oni', boss='momotaro', kibi=7)
 team.addmember(['inu', 'saru', 'kiji', ])
 print('target:' + team.target.typename)
 
-cnt = 0
+cnt = 1
 member = ''
 for s in team.member:
-    cnt += 1
     member = s.gettype()
     if hasattr(s, 'IsBoss'):
         if getattr(s, 'IsBoss'):
@@ -33,5 +31,6 @@ for s in team.member:
             boss = s.gettype()
 
     print('member' + str(cnt) + ':' + member)
+    cnt += 1
 
 print('kibidango remained:' + str(team.kibi))  # 4
