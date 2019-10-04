@@ -6,3 +6,5 @@ Twitterで桃太郎が流行っているので書いてみた。
 「p = Party(master='momotaro', target='oni', kibi=7)
 p.addmember(['inu', 'saru', 'kiji', ])
 print(p.kibi)  # 4
+
+ということで、アップ。
